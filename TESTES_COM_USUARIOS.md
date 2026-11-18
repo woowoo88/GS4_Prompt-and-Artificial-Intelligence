@@ -17,7 +17,7 @@ Depois das tarefas, pergunte qual orientação a pessoa usaria, o que precisou r
 
 ### Sessão 01, cenário 01 — Comparação de alternativas
 
-**Pergunta enviada** — “Compare LED e energia solar. Encontre uma fonte e diga qual número da estimativa poderia mudar na sua casa.”
+**Pergunta enviada** — “Compare LED e energia solar. Encontre uma fonte e diga qual número da estimativa poderia mudar na minha casa.”
 
 **Resposta observada** — O assistente usou uma residência de referência em São Paulo com consumo estimado de 3.000 kWh em 365 dias. Apresentou a troca por LED como redução de consumo, estimada em 70,08 kWh/ano, e a energia solar como geração local, estimada em 2.728 kWh/ano. Citou o INPE para a irradiação de 4,671 kWh/m²/dia. Entre as premissas que podem variar estão as 4 horas diárias de uso das lâmpadas e o aproveitamento dos créditos da geração solar.
 
