@@ -2,18 +2,6 @@
 
 **Status** Aguardando sessões com participantes reais. As tarefas e os critérios abaixo foram preparados para aplicação, com campos reservados para observações e ajustes posteriores.
 
-## Sessões simuladas em 18/11/2026
-
-Três perfis simulados formularam suas próprias perguntas e executaram consultas na interface de terminal do Citizen Assist. As observações abaixo registram o comportamento do assistente nessas execuções. A seção de sessões com participantes reais continua pendente.
-
-| Perfil simulado | Consulta e resultado observado | Ajuste realizado |
-| --- | --- | --- |
-| S01 — orçamento limitado e preocupação com o brilho | Ao começar com “Moro em São Paulo” e perguntar pela troca de duas incandescentes de 60 W por LED, recebeu orientação sobre RG. Ao reformular, recebeu os números do exemplo anual, mas faltou um jeito de adaptar a conta às horas de uso e ao limite de gasto. | Aceita a localização do estudo na pergunta. A resposta indica como comparar lúmens, escolher a primeira lâmpada a trocar e estimar economia mensal e limite de gasto. |
-| S02 — proprietário avaliando uma proposta solar | Perguntou se as placas zerariam a conta e o que pedir antes de assinar. Identificou o custo de disponibilidade e a diferença entre consumo e geração anuais. Precisou deduzir o que consultar nas faturas e como pedir a simulação. | A resposta explica o custo de disponibilidade em linguagem simples e orienta comparar consumo, geração, créditos e valor da conta mês a mês. |
-| S03 — morador comparando opções e buscando fontes | Perguntas iniciadas por “Moro em São Paulo” receberam orientação sobre RG. Após reformular, encontrou o Atlas do INPE e identificou a hipótese de aproveitamento integral dos créditos. Também perguntou sobre banho elétrico, fora do cenário calculado. | A consulta coloquial sobre LED e painéis solares segue a rota de energia. Quando a pergunta menciona banho ou chuveiro, a resposta informa os limites do estudo e os dados necessários para uma estimativa. |
-
-**Verificação após os ajustes.** A pergunta original sobre as incandescentes retornou a orientação sobre lúmens, a fórmula mensal e o critério de seis meses. O perfil solar repetiu a pergunta original e encontrou as instruções sobre as 12 faturas e a simulação mensal. No perfil comparativo, as duas perguntas originais passaram a retornar a comparação LED e solar ou a explicação dos limites para o banho, conforme a consulta.
-
 ## Protocolo para sessões com participantes reais
 
 Convide duas ou três pessoas do público-alvo, de preferência com familiaridade variada com contas de luz. Reserve cerca de 10 minutos por pessoa. Apresente a interface do Citizen Assist AI, use o exemplo residencial disponível e sugira que a pessoa pense em voz alta. Registre somente um identificador como P01. Peça autorização para tomar notas e use apenas dados fictícios nas consultas.
