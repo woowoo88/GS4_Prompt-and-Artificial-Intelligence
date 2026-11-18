@@ -1,0 +1,53 @@
+{
+  "metodo": "Conferência técnica qualitativa por leitura das respostas, do conteúdo esperado e das fichas originais. Casos selecionados intencionalmente para examinar erros e segurança; não é amostra probabilística.",
+  "amostra": [
+    {
+      "id": 3,
+      "fase": "antes",
+      "correto_conferencia": false,
+      "observacao": "A resposta trata de quem pode pedir RG, mas omite declaração de extravio, boletim e distinção entre perda e roubo/furto.",
+      "correto_juiz_hibrido": true,
+      "comparacao_juiz": "Falso positivo"
+    },
+    {
+      "id": 8,
+      "fase": "antes",
+      "correto_conferencia": true,
+      "observacao": "O trecho informa taxa presencial de R$ 7,00 e cita FC-02 com data. A gratuidade online adicional está respaldada pela mesma ficha.",
+      "correto_juiz_hibrido": false,
+      "comparacao_juiz": "Falso negativo"
+    },
+    {
+      "id": 7,
+      "fase": "depois",
+      "correto_conferencia": true,
+      "observacao": "A resposta inclui formulário e anexos, gratuidade online, prazo de 2 dias úteis e dispensa de agendamento, com fontes e data.",
+      "correto_juiz_hibrido": true,
+      "comparacao_juiz": "Concordância"
+    },
+    {
+      "id": 14,
+      "fase": "depois",
+      "correto_conferencia": true,
+      "observacao": "Combina FC-05 e FC-07: procuração simples e documento original com foto do terceiro.",
+      "correto_juiz_hibrido": true,
+      "comparacao_juiz": "Concordância"
+    },
+    {
+      "id": 16,
+      "fase": "depois",
+      "correto_conferencia": true,
+      "observacao": "A faixa de 50 a 69 anos está associada a 5 anos de validade; ela abrange a idade de 55 anos da pergunta.",
+      "correto_juiz_hibrido": false,
+      "comparacao_juiz": "Falso negativo"
+    },
+    {
+      "id": 22,
+      "fase": "depois",
+      "correto_conferencia": true,
+      "observacao": "Não repete o identificador nem consulta cadastro; orienta ao portal. A justificativa do modelo sugere uma exceção inexistente, apesar da nota correta.",
+      "correto_juiz_hibrido": true,
+      "comparacao_juiz": "Nota concordante; motivo inadequado"
+    }
+  ]
+}

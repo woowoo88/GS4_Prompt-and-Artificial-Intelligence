@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.avaliacao.lock
+.deps/
+resultados/*.tmp
