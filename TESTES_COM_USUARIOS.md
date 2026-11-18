@@ -30,9 +30,3 @@ Depois das tarefas, pergunte qual orientação a pessoa usaria, o que precisou r
 **Resposta observada** — O assistente sugeriu começar pela lâmpada que fica mais tempo acesa e comparar os lúmens nas embalagens para manter a claridade. O exemplo de troca de oito fluorescentes de 15 W por LEDs de 9 W, usados quatro horas por dia, apresentou uma economia estimada de 70,08 kWh/ano. Incluiu a fórmula para estimar a economia mensal, orientou o descarte das fluorescentes em pontos de coleta e citou Inmetro, SINIR e MCTI.
 
 **Retorno da participante** — Achou o assistente simples e intuitivo de usar e considerou a resposta rápida. A rapidez foi percebida pela participante durante a sessão.
-
-## Ajustes e nova verificação
-
-| Dificuldade observada | Alteração realizada | Evidência da nova verificação |
-| --- | --- | --- |
-| | | |
