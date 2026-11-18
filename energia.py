@@ -103,17 +103,30 @@ def resposta_energia(consulta: str) -> str:
         f"estimado de {_pt(CONSUMO_ANUAL_KWH, 0)} kWh em {DIAS} dias. "
         "Os valores servem para comparar opções e variam de uma casa para outra."
     )
+    if re.search(r"\b(?:banho|chuveiro)\b", normalizada):
+        introducao += (
+            " O estudo cobre lâmpadas e geração solar. Para estimar mudanças no banho, "
+            "seria preciso conhecer a potência do chuveiro e o tempo de uso."
+        )
     led = (
         f"Lâmpadas LED. Para {LAMPADAS} lâmpadas usadas {HORAS_DE_USO_DIA} h/dia, a troca "
         f"de fluorescentes de {POTENCIA_FLUORESCENTE_W} W por LEDs de {POTENCIA_LED_W} W "
-        f"com luz equivalente (cerca de {FLUXO_LUMINOSO_LM} lúmens cada) reduz o consumo de "
+        f"com brilho equivalente (cerca de {FLUXO_LUMINOSO_LM} lúmens cada) reduz o consumo de "
         f"iluminação de {_pt(dados['consumo_fluorescente_kwh'])} para "
         f"{_pt(dados['consumo_led_kwh'])} kWh/ano. A economia estimada é de "
         f"{_pt(dados['economia_led_kwh'])} kWh/ano, ou R$ {_pt(dados['economia_led_reais'])} "
         f"por ano a R$ {_pt(VALOR_IMPORTADO_KWH)}/kWh. O investimento hipotético é de "
-        f"R$ {_pt(dados['investimento_led_reais'])}. Priorize lâmpadas muito usadas, confira "
-        "os lúmens, a etiqueta e a compatibilidade com a luminária. Entregue as fluorescentes "
+        f"R$ {_pt(dados['investimento_led_reais'])}. Comece pela lâmpada que fica mais tempo acesa. "
+        "Para manter o brilho, compare os lúmens (lm) nas embalagens. Confira também a etiqueta "
+        "e a compatibilidade com a luminária. Entregue as fluorescentes "
         "usadas em pontos de coleta, pois contêm mercúrio."
+    )
+    proximo_passo_led = (
+        "Para estimar sua economia em um mês, multiplique a quantidade de lâmpadas pela "
+        "diferença de potência em watts e pelas horas de uso naquele mês. Divida por 1.000 "
+        "para obter kWh e multiplique pelo valor variável do kWh na sua conta. Para recuperar "
+        "o custo da troca em seis meses, um limite aproximado de gasto é seis vezes a economia "
+        "mensal estimada, se uso e tarifa permanecerem parecidos."
     )
     solar = (
         f"Solar fotovoltaica. Um sistema de {_pt(POTENCIA_SOLAR_KWP, 0)} kWp (potência de pico) "
@@ -125,10 +138,15 @@ def resposta_energia(consulta: str) -> str:
         f"totalmente aproveitados a R$ {_pt(VALOR_CREDITO_KWH)}/kWh. Isso resultaria em um "
         f"abatimento bruto estimado de R$ {_pt(dados['economia_solar_reais'])}/ano, com "
         f"investimento hipotético de R$ {_pt(INVESTIMENTO_SOLAR, 0)}. A fatura pode manter "
-        "cobranças como o custo de disponibilidade. Peça avaliação profissional do telhado, "
-        "do sombreamento e da conexão à distribuidora. O abatimento bruto não desconta "
-        "manutenção nem financiamento. Planeje a destinação "
+        "cobranças como o custo de disponibilidade, um valor mínimo pelo acesso à rede quando aplicável. "
+        "O abatimento bruto não desconta manutenção nem financiamento. Planeje a destinação "
         "dos módulos e do inversor no fim da vida útil."
+    )
+    proximo_passo_solar = (
+        "Antes de assinar, procure nas suas últimas 12 faturas o consumo de cada mês em kWh. "
+        "Peça uma simulação que coloque lado a lado o consumo, a geração prevista, os créditos "
+        "e o valor que ainda seria cobrado mês a mês. Peça também avaliação do telhado, "
+        "do sombreamento e da conexão à distribuidora."
     )
     impacto_led = (
         f"A menor compra de eletricidade equivale a cerca de {_pt(dados['co2_led_kg'], 1)} kg de CO₂/ano "
@@ -143,10 +161,10 @@ def resposta_energia(consulta: str) -> str:
 
     if pergunta_led and not pergunta_solar:
         fontes_led = f"Fontes: Inmetro {INMETRO}\nSINIR {SINIR}\nMCTI {MCTI}"
-        return "\n\n".join((introducao, led, impacto_led, fontes_led))
+        return "\n\n".join((introducao, led, proximo_passo_led, impacto_led, fontes_led))
     if pergunta_solar and not pergunta_led:
         fontes_solar = f"Fontes: Atlas do INPE {ATLAS}\nANEEL {ANEEL}\nCETEM {CETEM}\nMCTI {MCTI}"
-        return "\n\n".join((introducao, solar, impacto_solar, fontes_solar))
+        return "\n\n".join((introducao, solar, proximo_passo_solar, impacto_solar, fontes_solar))
 
     orientacao = (
         "A troca por LED diminui o consumo mantendo o nível de iluminação. A geração solar "
@@ -156,4 +174,5 @@ def resposta_energia(consulta: str) -> str:
         "cobranças fixas."
     )
     fontes = "Fontes: " + "\n".join(f"{nome} {url}" for nome, url in FONTES_ENERGIA.items())
-    return "\n\n".join((introducao, led, solar, orientacao, impacto_led, impacto_solar, fontes))
+    return "\n\n".join((introducao, led, solar, proximo_passo_solar, orientacao,
+                        impacto_led, impacto_solar, fontes))
