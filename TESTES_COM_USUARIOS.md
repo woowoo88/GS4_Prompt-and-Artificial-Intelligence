@@ -1,11 +1,5 @@
 # Testes de usabilidade da orientação energética
 
-**Status** Uma sessão com participante real e dois cenários registrados. Falta esclarecer qual valor a participante quis alterar no cenário de comparação.
-
-## Protocolo para sessões com participantes reais
-
-Convide duas ou três pessoas do público-alvo, de preferência com familiaridade variada com contas de luz. Reserve cerca de 10 minutos por pessoa. Apresente a interface do Citizen Assist AI, use o exemplo residencial disponível e sugira que a pessoa pense em voz alta. Registre somente um identificador como P01. Peça autorização para tomar notas e use apenas dados fictícios nas consultas.
-
 | Tarefa apresentada ao participante | O que observar |
 | --- | --- |
 | Você dispõe de pouco dinheiro e quer diminuir o consumo em casa. Pergunte ao assistente se vale trocar as lâmpadas. | A pessoa identifica a opção de menor custo inicial e consegue explicar a diferença entre os watts da lâmpada e os quilowatts-hora economizados no ano. |
