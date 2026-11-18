@@ -1,6 +1,6 @@
 # Testes de usabilidade da orientação energética
 
-**Status** Uma sessão com participante real registrada. A avaliação de compreensão da sessão 01 aguarda o retorno da participante.
+**Status** Uma sessão com participante real registrada. A sessão 01 tem feedback sobre as fontes e a facilidade de uso. Falta identificar qual valor a participante quis alterar.
 
 ## Protocolo para sessões com participantes reais
 
@@ -18,13 +18,15 @@ Depois das tarefas, pergunte qual orientação a pessoa usaria, o que precisou r
 
 | Sessão | Data | Tarefa | Resultado | Comentário ou dificuldade | Ajuste proposto |
 | --- | --- | --- | --- | --- | --- |
-| 01 (P01) | 18/11/2026 | Comparar LED e energia solar, localizar uma fonte e identificar uma premissa que poderia mudar em casa. | Consulta executada. O assistente forneceu a comparação e citou o INPE. Avaliação da tarefa pela participante pendente. | Aguardando relato sobre o que entendeu e se precisou de ajuda. | A definir após o retorno. |
+| 01 (P01) | 18/11/2026 | Comparar LED e energia solar, localizar uma fonte e identificar uma premissa que poderia mudar em casa. | Fez a consulta sem ajuda e localizou seis fontes. Falta confirmar a qual premissa se referiu. | Achou a interação “bem simples e intuitiva”. | Aguardando esclarecimento sobre o valor citado. |
 
 ### Sessão 01
 
 **Pergunta enviada** — “Compare LED e energia solar. Encontre uma fonte e diga qual número da estimativa poderia mudar na sua casa.”
 
 **Resposta observada** — O assistente usou uma residência de referência em São Paulo com consumo estimado de 3.000 kWh em 365 dias. Apresentou a troca por LED como redução de consumo, estimada em 70,08 kWh/ano, e a energia solar como geração local, estimada em 2.728 kWh/ano. Citou o INPE para a irradiação de 4,671 kWh/m²/dia. Entre as premissas que podem variar estão as 4 horas diárias de uso das lâmpadas e o aproveitamento dos créditos da geração solar.
+
+**Retorno da participante** — Identificou Inmetro, SINIR, Atlas do INPE, ANEEL, CETEM e MCTI na resposta. Relatou que não precisou de ajuda. Sobre o valor que mudaria em casa, escreveu “trocaria o número 5”. A variável e a unidade ainda precisam ser esclarecidas.
 
 ## Ajustes e nova verificação
 
