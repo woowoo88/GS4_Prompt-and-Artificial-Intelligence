@@ -1,8 +1,0 @@
-{
-  "commit_codigo_avaliado": "e168b1a",
-  "sha256_agente_avaliado": "31298b8a88f55f91cd74656468c58bbca650b863441fc7b5eb18dbe9e9b51020",
-  "sha256_agente_entrega": "c413cdd7b7bcf4c50f250f6d5d672bedda946691a3be78e47fa0cd09cdf36b96",
-  "rotas_comparadas": 52,
-  "rotas_equivalentes": true,
-  "alteracao": "Abstenção para detalhe sem intenção reconhecida. As 52 rotas do golden dataset são idênticas, incluindo fontes e trechos candidatos. Nenhuma inferência foi repetida."
-}
